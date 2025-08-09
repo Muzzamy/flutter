@@ -102,6 +102,15 @@ class LandingPage extends StatelessWidget {
                 ),
               ),
             ),
+            Gap(10),
+            ElevatedButton(onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                return ListviewListviewBuilder(); }));
+            }, child: Text("Doctors Details",style: TextStyle(fontSize: 18)),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xFFFFCC80),
+                  foregroundColor: Colors.black),
+            ),
           ],
         ),
       ),
